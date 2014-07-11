@@ -1,0 +1,12 @@
+<p>
+  <strong>Naam:</strong>
+  <%= @score.Naam %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @score.Score %>
+</p>
+
+<%= link_to 'Edit', edit_score_path(@score) %> |
+<%= link_to 'Back', scores_path %>

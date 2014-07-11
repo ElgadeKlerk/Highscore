@@ -1,0 +1,32 @@
+
+
+<h2 style="font-size: 80px; margin-top: 50px; text-align: center;">
+<%= link_to 'Nieuwe Highscore', new_score_path %>
+</h3>
+
+<table style="width: 100%; margin-top: 100px;">
+  <thead>
+    <tr>
+      <th style="width: 50%; font-size: 60px; line-height: 62px;">Naam</th>
+      <th style="width: 50%; font-size: 60px; line-height: 62px;">Score</th>
+      <!-- <th></th>
+      <th></th>
+      <th></th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scores.each do |score|%>
+   
+      <tr>
+        <td style="width: 50%; text-align: center; font-size: 60px; line-height: 62px;"><%= score.Naam %></td>
+        <td style="width: 50%; text-align: center; font-size: 60px; line-height: 62px;"><%= score.Score %></td>
+      <!--  <td><%= link_to 'Show', score %></td>
+        <td><%= link_to 'Edit', edit_score_path(score) %></td>
+        <td><%= link_to 'Destroy', score, method: :delete, data: { confirm: 'Are you sure?' } %></td>   -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
